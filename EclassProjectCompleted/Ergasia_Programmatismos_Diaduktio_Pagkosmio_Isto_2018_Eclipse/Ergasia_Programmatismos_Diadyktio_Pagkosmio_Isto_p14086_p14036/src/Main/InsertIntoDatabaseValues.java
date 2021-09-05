@@ -4,11 +4,11 @@ public class InsertIntoDatabaseValues {
 
 	 static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
 	   static final String DB_URL = "jdbc:mysql://localhost";//at first we might dont have a database
-	   static final String DB_URL1 = "jdbc:mysql://localhost/UNIVERSITY";//here is the url fro the database
+	   static final String DB_URL1 = "jdbc:mysql://localhost/university";//here is the url fro the database
 
 	   //  Database credentials
 	   static final String USER = "root";
-	   static final String PASS = "test123";
+	   static final String PASS = "Password123#@!";
 	   
 	   
 	   boolean x;
@@ -108,7 +108,7 @@ public class InsertIntoDatabaseValues {
 			      }else {
 			      System.out.println("Insert records into students");
 			      stmt = conn.createStatement();
-			      sql = "INSERT INTO  STUDENTS " +
+			      sql = "INSERT INTO  students " +
 			              "VALUES ('"+u+"','"+p+"','"+f+"','"+l+"','"+a+"','"+ph+"','"+em+"','"+student_id+"')";
 			      stmt.executeUpdate(sql);
 			      System.out.println("Records inserted");

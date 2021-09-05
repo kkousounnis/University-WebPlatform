@@ -11,11 +11,11 @@ import Classes.Student;
 public class TakeUserValues {
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
     static final String DB_URL = "jdbc:mysql://localhost";//at first we might dont have a database
-	   static final String DB_URL1 = "jdbc:mysql://localhost/UNIVERSITY";//here is the url fro the database
+	   static final String DB_URL1 = "jdbc:mysql://localhost/university";//here is the url fro the database
 
 	   //  Database credentials
 	   static final String USER = "root";
-	   static final String PASS = "test123";
+	   static final String PASS = "Password123#@!";
 	   Student s=new Student();
 	   
 	public String UserValues(String u,String p) {
@@ -50,7 +50,7 @@ public class TakeUserValues {
 		      		      
 		      System.out.println("Select   user records");
 		      stmt = conn.createStatement();
-		      String  sql = "SELECT * FROM  STUDENTS "
+		      String  sql = "SELECT * FROM  students "
 		      		+ "WHERE USERNAME='"+u+"' && password='"+p+"'";
 		      ResultSet rs = stmt.executeQuery(sql);
 		      //STEP 5: Extract data from result set

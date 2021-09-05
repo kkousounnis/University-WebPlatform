@@ -6,11 +6,11 @@ import Classes.Secretary;
 
 public class CompareSecretaryValues {
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	   static final String DB_URL = "jdbc:mysql://localhost/UNIVERSITY";
+	   static final String DB_URL = "jdbc:mysql://localhost/university";
 
 	   //  Database credentials
 	   static final String USER = "root";
-	   static final String PASS = "test123";
+	   static final String PASS = "Password123#@!";
 	   boolean x=false;
 	   Secretary s=new Secretary();
 	public boolean CompareSecretaryLogin(String u,String p) {
@@ -30,7 +30,7 @@ public class CompareSecretaryValues {
 		      System.out.println("Creating statement...");
 		      stmt = conn.createStatement();
 
-		      String sql = "SELECT username,password FROM university.secretary";
+		      String sql = "SELECT username,password FROM university.Secretary";
 		      ResultSet rs = stmt.executeQuery(sql);
 		      //STEP 5: Extract data from result set
 		      while(rs.next()){

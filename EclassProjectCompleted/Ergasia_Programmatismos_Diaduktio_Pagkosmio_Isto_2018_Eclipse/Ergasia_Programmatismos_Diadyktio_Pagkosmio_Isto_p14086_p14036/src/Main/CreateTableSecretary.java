@@ -6,7 +6,7 @@ public class CreateTableSecretary {
 
 	   //  Database credentials
 	   static final String USER = "root";
-	   static final String PASS = "test123";
+	   static final String PASS = "Password123#@!";
 	   
 	   String username_secretary="";
 	   
@@ -26,7 +26,7 @@ public class CreateTableSecretary {
 		      System.out.println("Creating database...");
 		      stmt = conn.createStatement();
 		      
-		      String sql = "CREATE DATABASE IF NOT EXISTS UNIVERSITY";
+		      String sql = "CREATE DATABASE IF NOT EXISTS university";
 		      stmt.executeUpdate(sql);
 		      System.out.println("Database created successfully...");
 		       

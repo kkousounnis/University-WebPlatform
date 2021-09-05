@@ -6,11 +6,11 @@ import Classes.Proffessor;
 public class UpdateTableProffessorLesson {
 
 	 static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";   
-	   static final String DB_URL = "jdbc:mysql://localhost/UNIVERSITY";//here is the url fro the database
+	   static final String DB_URL = "jdbc:mysql://localhost/university";//here is the url fro the database
 
 	   //  Database credentials
 	   static final String USER = "root";
-	   static final String PASS = "test123";
+	   static final String PASS = "Password123#@!";
 	   
 	   
 	   String id_prof="";

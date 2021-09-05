@@ -11,11 +11,11 @@ import Classes.Proffessor;
 
 public class CompareProffessorValuesLogin {
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	   static final String DB_URL = "jdbc:mysql://localhost/UNIVERSITY";
+	   static final String DB_URL = "jdbc:mysql://localhost/university";
 
 	   //  Database credentials
 	   static final String USER = "root";
-	   static final String PASS = "test123";
+	   static final String PASS = "Password123#@!";
 	   boolean x=false;
 	   Proffessor s=new Proffessor();
 	public boolean CompareProffessorLogin(String u,String p) {

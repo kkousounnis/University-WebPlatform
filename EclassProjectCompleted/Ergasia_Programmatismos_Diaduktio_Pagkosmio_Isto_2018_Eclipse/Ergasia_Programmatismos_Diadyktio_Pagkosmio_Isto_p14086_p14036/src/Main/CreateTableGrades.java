@@ -8,7 +8,7 @@ public class CreateTableGrades {
 	   
 	   //  Database credentials
 	   static final String USER = "root";
-	   static final String PASS = "test123";
+	   static final String PASS = "Password123#@!";
 	   public void   CreateTableGrade() {
 		   Connection conn = null;
 		   Statement stmt = null;
@@ -25,7 +25,7 @@ public class CreateTableGrades {
 		      System.out.println("Creating database...");
 		      stmt = conn.createStatement();
 		      
-		      String sql = "CREATE DATABASE IF NOT EXISTS UNIVERSITY";
+		      String sql = "CREATE DATABASE IF NOT EXISTS university";
 		      stmt.executeUpdate(sql);
 		      System.out.println("Database created successfully...");
 		      System.out.println("Create Table if it doesn't exist");

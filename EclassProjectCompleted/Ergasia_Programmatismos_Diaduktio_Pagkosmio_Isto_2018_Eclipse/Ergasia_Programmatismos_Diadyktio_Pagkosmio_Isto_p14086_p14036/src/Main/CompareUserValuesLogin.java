@@ -7,11 +7,11 @@ import Classes.Student;
 public class CompareUserValuesLogin {
 	 // JDBC driver name and database URL
 	   static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	   static final String DB_URL = "jdbc:mysql://localhost/UNIVERSITY";
+	   static final String DB_URL = "jdbc:mysql://localhost/university";
 
 	   //  Database credentials
 	   static final String USER = "root";
-	   static final String PASS = "test123";
+	   static final String PASS = "Password123#@!";
 	   boolean x=false;
 	   Student s=new Student();
 	public boolean CompareUserLogin(String u,String p) {
